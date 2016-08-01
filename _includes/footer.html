@@ -42,12 +42,21 @@
                     Thanks for visiting us! We work for free, nobody pay us for writing articles... But we drink a lot of coffee, so if you like our page consider donating a coffee! We would really appreciate that!
                 </p>
                 <br>
-                <a href="#" class="donate-btn">
-                    <i class="fa fa-paypal fa-inverse fa-lg" aria-hidden="true"></i> | 
-                    Donate
-                    <i class="fa fa-coffee fa-inverse fa-lg" aria-hidden="true"></i>
-                </a>                     
-                <small>via PayPal</small>
+                
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="PU6WVV7ZBYHAJ">
+                    
+                    <button type="submit" class="donate-btn">
+                        <i class="fa fa-paypal fa-inverse fa-lg" aria-hidden="true"></i> | 
+                            Donate
+                        <i class="fa fa-coffee fa-inverse fa-lg" aria-hidden="true"></i>
+                    </button>  
+                    <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+                   
+                <small style="color: #95a5a6;">via <strong>PayPal</strong></small>
             </div>
 
         </div>

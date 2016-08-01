@@ -326,10 +326,11 @@ footer p a:active {
     text-decoration: underline;
     color: $titleFontColor;
 }
-footer a.donate-btn {
+footer .donate-btn {
     color: #fff;
     background-color: rgb(64,64,64);
     padding: 5px 5px;
+    border: none;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -337,13 +338,13 @@ footer a.donate-btn {
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-footer a.donate-btn i.fa {
+footer .donate-btn i.fa {
     margin: 0 3px;
 }
 
-footer a.donate-btn:hover,
-footer a.donate-btn:focus,
-footer a.donate-btn:active {
+footer .donate-btn:hover,
+footer .donate-btn:focus,
+footer .donate-btn:active {
     text-decoration: none;
     background-color: $linkHoverColor;
 }
