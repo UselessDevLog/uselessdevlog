@@ -220,8 +220,7 @@ a.panel-social:active {
     display: table;
     position: relative;
     padding: 5%;
-    min-height: 350px;
-    
+    height: 350px;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -252,7 +251,7 @@ a.panel-social:active {
 @media (max-width: 320px)
 {
     .cover {
-        min-height: 350px;
+        height: 350px;
     }
     .cover .heading h1 {
         font-size: 35px;
@@ -261,7 +260,7 @@ a.panel-social:active {
 @media (min-width: 768px)
 {
     .cover {
-        min-height: 550px;
+        height: 550px;
     }
     .cover .heading h1 {
         font-size: 60px;
@@ -276,7 +275,7 @@ a.panel-social:active {
 @media (min-width: 1200px)
 {
     .cover {
-        min-height: 650px;
+        height: 650px;
     }
     .cover .heading h1 {
         font-size: 80px;
