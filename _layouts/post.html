@@ -1,0 +1,170 @@
+---
+layout: default-post
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <header class="cover" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{ site.images.hero }}{{page.image}}) no-repeat center center scroll; background-color:#000;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;">
+
+        <div class="heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <h1 class="title" itemprop="name headline">
+                            {% if page.title %}
+                                {{ page.title }}
+                            {% else %}
+                                {{ site.title }}
+                            {% endif %}
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-heading">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <p>
+                        {% if page.subtitle %}
+                            {{ page.subtitle }}
+                        {% elsif page.title and page.date %}
+                            Posted by 
+                                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                                    <span itemprop="name">
+                                        {% if page.author %}
+                                            {{ page.author }}
+                                        {% else %}
+                                            Admin 
+                                        {% endif %}
+                                    </span>
+                                </span>
+
+                                &#9875; 
+
+                                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                                    {{ page.date | date: "%B %-d, %Y" }} 
+                                </time>
+                        {% endif %}
+                        </p>
+                        <span class="readTime"> <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            {% assign words = page.content | number_of_words %}
+                                {% if words < 360 %}
+                                    1 min
+                                {% else %}
+                                    {{ words | divided_by:180 }} mins
+                                {% endif %}
+                                    read
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="post-content content-section container" itemprop="articleBody">
+        {{ content }}
+        <br>
+                {% if page.categories %}
+                <p>
+                    <small>
+                        <i>Written in </i>
+                        <a class="link-category" href="{{site.url}}/{{page.categories}}">
+                            {{ page.categories }}
+                        </a>
+                    </small>
+                </p>
+                {% endif %}
+                
+                {% if page.tags.size > 0 %}
+                <p> 
+                    <small>
+                        {% for tag in page.tags %}
+                            
+                            <span class="tags">
+                            {% if forloop.first %}
+                                <span style="color: #c3cccd"> &#9679; | </span>
+                            {% endif %}
+                                {{tag}}
+                            </span>
+                        {% endfor %}
+                    </small>
+                </p>
+                {% endif %}
+                    
+            
+        <hr />
+        <p class="social-activity">
+                <span class="fa-stack fa-lg">
+                    <a class="panel-social" name="twitter" href="http://twitter.com/home?status={{ page.title }}+{{ page.url | prepend: site.url }}" target='_blank'>
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class='fa fa-twitter fa-inverse fa-stack-1x'></i>
+                    </a>
+                </span>
+
+                <span class="fa-stack fa-lg">
+                    <a class="panel-social" name="facebook" href="http://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}&title={{ page.title }}" target='_blank'>
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class='fa fa-facebook fa-inverse fa-stack-1x'></i>
+                    </a>
+                </span>
+
+                <span class="fa-stack fa-lg">
+                    <a class="panel-social" name="googleplus" href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}" target='_blank'>
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class='fa fa-google-plus fa-inverse fa-stack-1x'></i>
+                    </a>
+                </span> 
+
+                <span class="fa-stack fa-lg">
+                    <a class="panel-social" name="reddit" href="http://www.reddit.com/submit?url={{ page.url | prepend: site.url }}&title={{ page.title }}">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class='fa fa-reddit-alien fa-inverse fa-stack-1x'></i>
+                    </a>
+                </span> 
+            </p>
+            <hr />
+    </div>
+        
+        {% if page.author && site.data.authors[page.author] %}
+        <div class="post-author container">
+            <h5 class="text-center">About the author</h5>
+            <div class="row">
+                <div class="col-sm-5 col-author-img">
+                    <img class="img-circle" src="{{site.images.member}}{{site.data.authors[page.author].image}}" alt="{{site.data.authors[page.author].image}}" title="{{site.data.authors[page.author].name}}" width="150px" height="150px" /><br>
+                </div>
+                <div class="col-sm-5 col-author-text">
+                    <h4>{{site.data.authors[page.author].name}} 
+                    
+                    <a class="author-social" href="https://twitter.com/{{site.data.authors[page.author].twitter}}">
+                        @{{site.data.authors[page.author].twitter}}
+                    </a>
+                    </h4>
+                    <p>{{site.data.authors[page.author].bio}}</p>
+                    
+                    {% if site.data.authors[page.author].twitter %}
+                    
+                    {%endif%}
+                </div>
+            </div>
+
+
+        </div>
+         <hr />   
+        {% endif %}
+       
+        
+    <div class="post-comment container">
+        {% include disqus.html %}
+        <hr />
+    </div>
+        
+    
+    {% if site.related_posts.size > 0 %}
+    <div class="post-related container">
+        {%include related.html%}
+    </div>
+        <br>
+    {% endif %}
+</article>

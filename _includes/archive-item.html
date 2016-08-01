@@ -1,0 +1,19 @@
+    {% unless post.next %}
+      <h3>{{ post.date | date: '%Y' }}</h3>
+      <h4>{{ post.date | date: '%b' }}</h4>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% capture month %}{{ post.date | date: '%b' }}{% endcapture %}
+      {% capture nmonth %}{{ post.next.date | date: '%b' }}{% endcapture %}
+      {% if year != nyear %}
+        <h3>{{ post.date | date: '%Y' }}</h3>
+        <h4>{{ post.date | date: '%b' }}</h4>
+      {% else %}
+      {% if month != nmonth %}
+        <h4>{{ post.date | date: '%b' }}</h4>
+    {% endif%}
+      {% endif %}
+    {% endunless %}
+
+<li><p> <a href="{{ post.url }}">{{ post.title }}</a></p></li>

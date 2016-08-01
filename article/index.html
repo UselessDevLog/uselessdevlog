@@ -1,0 +1,11 @@
+---
+title: Articles
+layout: archive
+image: light.jpg
+
+rubrica: article
+---
+
+  {% for post in site.categories.[page.rubrica] %}
+      {% include archive-item.html %}
+  {% endfor %}

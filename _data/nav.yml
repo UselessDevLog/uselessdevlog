@@ -1,0 +1,8 @@
+# masthead navigation links
+header:
+  - title: "About"
+    url: /about/
+  - title: "Archive"
+    url: /archive/
+  - title: "Article"
+    url: /article/

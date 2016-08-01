@@ -1,0 +1,59 @@
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            
+            <a class="navbar-brand" href="{{site.url}}">
+                Useless Dev Log
+            </a>
+        </div>
+
+        <!-- Nav Linksg -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                {% for my_page in site.data.nav.header %}
+                        <li>
+                            <a href="{{ my_page.url | prepend: site.url }}" >{{ my_page.title }}</a>
+                        </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<header class="cover" style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url({{site.images.hero}}{{page.image}}) no-repeat center center scroll; background-color:#000;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;">
+    <div class="heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h1 class="title">
+                        {% if page.title %}
+                            {{ page.title }}
+                        {% else %}
+                            {{ site.title }}
+                        {% endif %}
+                    </h1>
+                    <p class="subheading">
+                    {% if page.subtitle %}
+                        {{ page.subtitle }}
+                    {% elsif page.title and page.date %}
+                        Posted by 
+                            {% if post.author %}
+                                {{ post.author }}
+                            {% else %}
+                                Admin 
+                            {% endif %}
+                	        &#9875; 
+                            {{ page.date | date: "%B %-d, %Y" }} 
+                    {% endif %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</header>

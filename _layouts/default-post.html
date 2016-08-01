@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    
+    {% include head.html %}
+
+    <body style="background-color: #fafafa">
+
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <a class="navbar-brand" href="{{site.url}}">
+                        Useless Dev Log
+                    </a>
+                </div>
+
+            <!-- Nav Linksg -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    {% for my_page in site.data.nav.header %}
+                            <li>
+                                <a href="{{ my_page.url | prepend: site.url }}" >{{ my_page.title }}</a>
+                            </li>
+                    {% endfor %}
+                </ul>
+            </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+      
+        <!-- content -->
+        {{ content }}
+        
+        {% include footer.html %}
+
+            <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+            <script type="text/javascript">
+            $(document).ready(function(){
+                $(".post-content img").addClass("img-responsive");
+                $(".post-content table").addClass("table");
+});
+        
+            </script>
+    </body>
+
+</html>
