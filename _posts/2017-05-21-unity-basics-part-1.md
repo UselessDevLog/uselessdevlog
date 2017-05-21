@@ -43,7 +43,7 @@ Click `Layout` on top right corner:
 
 and then:
 
- `Right Click on Project -> one column layout`{: style="text-align: center"}
+ {: style="text-align: center"}`Right Click on Project -> one column layout`
 
 #### Scene
 
