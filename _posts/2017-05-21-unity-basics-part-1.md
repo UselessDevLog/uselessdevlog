@@ -35,7 +35,7 @@ In this Rubrica, I'll write code in c#, starting from the very basics.
 
 There are multiple tabs in Unity, usually I prefer a layout that gives more visibility to Scene and Game, just like this:
 
-![unityframe]({{site.url}}/images/unityframe.jpg){: .img-responsive .align-center}
+![unityframe]({{site.url}}/images/unityframe.jpg){: .img-responsive }
 
 Click `Layout` on top right corner:
 
