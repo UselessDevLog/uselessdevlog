@@ -7,77 +7,76 @@ image: light.jpg
 <div class="row">
     <div class="col-lg-10 col-lg-offset-1">
         <div class="row">
+        {% assign posts = paginator.posts | where: "lang", "en" %}
         {% for post in paginator.posts %}
-            {% if post.lang == "en" %}
-                {% if forloop.index0 == 0 or forloop.index0 == 3 or forloop.index0 == 6 %}
-                    <div class="col-md-4 col-xs-12 col-sm-6">
-                {% endif %}
+            {% if forloop.index0 == 0 or forloop.index0 == 3 or forloop.index0 == 6 %}
+                <div class="col-md-4 col-xs-12 col-sm-6">
+            {% endif %}
 
-                    <section class="panel panel-defualt">
+                <section class="panel panel-defualt">
                     
-                        <!-- panel head -->
-                        <div class="panel-heading">
-                            <a href="{{ post.url | prepend: site.url }}">
-                                <img class="img-responsive" src="{{ site.images.mini }}{{post.image}}" alt="{{post.image}}" title="{{post.title}}" />
-                            </a>
-                        </div>
-                    
-                        <!-- panel body -->
-                        <div class="panel-body">
-                            <p class="panel-body-meta">
-                                {% if post.author %}
-                                    {{ post.author }}
-                                {% else %}
-                                    Admin 
-                                {% endif %}
-                                <span class="text-right">{{ post.date | date: "%b %-d, %Y" }}</span>
-                            </p>
-                            <h2 class="section-title">
-                                <a class="panel-body-title" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
-                            </h2>
-                        </div>
-                    
-                        <!-- comment ecc -->
-                        <div class="panel-footer">
-                        
-                                 <span class="fa-stack fa-lg">
-                                    <a class="panel-social" href="http://twitter.com/home?status={{ post.title }}+{{ post.url | prepend: site.url }}" target='_blank'>
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class='fa fa-twitter fa-inverse fa-stack-1x'></i>
-                                    </a>
-                                 </span>
-
-                                 <span class="fa-stack fa-lg">
-                                    <a class="panel-social" href="http://www.facebook.com/sharer/sharer.php?u={{ post.url | prepend: site.url }}&title={{ post.title }}" target='_blank'>
-                                         <i class="fa fa-circle fa-stack-2x"></i>
-                                         <i class='fa fa-facebook fa-inverse fa-stack-1x'></i>
-                                    </a>
-                                 </span>
-
-                                 <span class="fa-stack fa-lg">
-                                    <a class="panel-social" href="https://plus.google.com/share?url={{ post.url | prepend: site.url }}" target='_blank'>
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class='fa fa-google-plus fa-inverse fa-stack-1x'></i>
-                                    </a>
-                                 </span> 
-
-                                 <span class="fa-stack fa-lg">
-                                    <a class="panel-social" href="http://www.reddit.com/submit?url={{ post.url | prepend: site.url }}&title={{ post.title }}">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class='fa fa-reddit-alien fa-inverse fa-stack-1x'></i>
-                                    </a>
-                                 </span> 
-                        
-                        </div>
-                    </section>
-
-                {% if forloop.index0 == 2 or forloop.index0 == 5 or forloop.index0 == 8 %}
+                    <!-- panel head -->
+                    <div class="panel-heading">
+                        <a href="{{ post.url | prepend: site.url }}">
+                            <img class="img-responsive" src="{{ site.images.mini }}{{post.image}}" alt="{{post.image}}" title="{{post.title}}" />
+                        </a>
                     </div>
-                {% elsif  forloop.last == true %}
-                    {{% if forloop.index0 < 2 or forloop.index0 < 5 or forloop.index0 < 8 %}}
-                        </div>
-                    {{% endif %}}
-                {% endif %}
+                    
+                    <!-- panel body -->
+                    <div class="panel-body">
+                        <p class="panel-body-meta">
+                            {% if post.author %}
+                                {{ post.author }}
+                            {% else %}
+                                Admin 
+                            {% endif %}
+                            <span class="text-right">{{ post.date | date: "%b %-d, %Y" }}</span>
+                        </p>
+                        <h2 class="section-title">
+                            <a class="panel-body-title" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+                        </h2>
+                    </div>
+                    
+                    <!-- comment ecc -->
+                    <div class="panel-footer">
+                        
+                             <span class="fa-stack fa-lg">
+                                <a class="panel-social" href="http://twitter.com/home?status={{ post.title }}+{{ post.url | prepend: site.url }}" target='_blank'>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class='fa fa-twitter fa-inverse fa-stack-1x'></i>
+                                </a>
+                             </span>
+
+                             <span class="fa-stack fa-lg">
+                                <a class="panel-social" href="http://www.facebook.com/sharer/sharer.php?u={{ post.url | prepend: site.url }}&title={{ post.title }}" target='_blank'>
+                                     <i class="fa fa-circle fa-stack-2x"></i>
+                                     <i class='fa fa-facebook fa-inverse fa-stack-1x'></i>
+                                </a>
+                             </span>
+
+                             <span class="fa-stack fa-lg">
+                                <a class="panel-social" href="https://plus.google.com/share?url={{ post.url | prepend: site.url }}" target='_blank'>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class='fa fa-google-plus fa-inverse fa-stack-1x'></i>
+                                </a>
+                             </span> 
+
+                             <span class="fa-stack fa-lg">
+                                <a class="panel-social" href="http://www.reddit.com/submit?url={{ post.url | prepend: site.url }}&title={{ post.title }}">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class='fa fa-reddit-alien fa-inverse fa-stack-1x'></i>
+                                </a>
+                             </span> 
+                        
+                    </div>
+                </section>
+
+            {% if forloop.index0 == 2 or forloop.index0 == 5 or forloop.index0 == 8 %}
+                </div>
+            {% elsif  forloop.last == true %}
+                {{% if forloop.index0 < 2 or forloop.index0 < 5 or forloop.index0 < 8 %}}
+                    </div>
+                {{% endif %}}
             {% endif %}
         {% endfor %}
         </div>

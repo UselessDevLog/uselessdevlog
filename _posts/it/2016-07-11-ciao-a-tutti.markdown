@@ -2,8 +2,9 @@
 layout: post
 title:  "Ciao a tutti"
 date:   2016-07-11 15:33:14 +0200
-categories: article/it/
+categories: article/
 image: coffee.jpg
+lang: it
 ---
 Comunque questo è lo stesso articolo, solo con l'IT davanti.
 
