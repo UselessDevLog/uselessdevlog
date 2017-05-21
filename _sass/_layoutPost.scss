@@ -10,6 +10,10 @@
     
 }
 
+.post-content li{
+	margin-bottom: $marginBetweenList;
+}
+
 .post-content a{
     color: #337ab7;
     -webkit-transition: all .2s ease-in-out;
