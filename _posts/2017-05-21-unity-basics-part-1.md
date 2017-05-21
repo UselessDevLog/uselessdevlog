@@ -33,9 +33,17 @@ In this Rubrica, I'll write code in c#, starting from the very basics.
 
 ### Tabs and Windows
 
-There are multiple tabs in Unity, usually I prefer a layout 
+There are multiple tabs in Unity, usually I prefer a layout that gives more visibility to Scene and Game, just like this:
 
-![unityframe]({{site.url}}/images/unityframe.jpg)
+![unityframe]({{site.url}}/images/unityframe.jpg){: .img-responsive }
+
+Click `Layout` on top right corner:
+
+<p style="text-align: center">`Layout -> 2 by 3 Column`</p>
+
+and then:
+
+<p style="text-align: center">`Right Click on Project -> one column layout`</p>
 
 #### Scene
 
