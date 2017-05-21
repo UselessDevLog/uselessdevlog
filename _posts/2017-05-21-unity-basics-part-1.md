@@ -39,11 +39,11 @@ There are multiple tabs in Unity, usually I prefer a layout that gives more visi
 
 Click `Layout` on top right corner:
 
-<p style="text-align: center">`Layout -> 2 by 3 Column`</p>
+<p style="text-align: center"> `Layout -> 2 by 3 Column` </p>
 
 and then:
 
-<p style="text-align: center">`Right Click on Project -> one column layout`</p>
+<p style="text-align: center"> `Right Click on Project -> one column layout` </p>
 
 #### Scene
 
