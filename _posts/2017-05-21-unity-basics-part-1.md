@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unity Basics #1"
+title: "Unity Basics #1: The Engine"
 description: The very basics Unity steps
 date:   2017-05-21 20:13:10 +0200
 author: Gio-
@@ -8,7 +8,7 @@ author: Gio-
 comments: true
 categories: article
 image: coffee.jpg
-tags: unity, basics, unity basics, game, dev, programming, c#, c sharp
+tags: unity, basics, unity basics, game, dev, programming, c#, c sharp, tutorials, tutorial
 ---
 
 
@@ -26,12 +26,16 @@ Unity is a Game Engine developed by Unity Technologies which is primarly used to
 Before start teaching some code, it is usefull to know some *keywords* and aspects of this engine. First, in Unity you can write code in different programming languages:
 
 - **Boo**: pls don't...
-- **Javascript (sort of)**: this is not properly javascript, it's UnityScript. In Unity's previous versions, it was very popular and today there are some tutorials written in UnityScripts, somewhere. But it is becoming less and less used in favor of a more solid and performing language like c#.
+- **Javascript (sort of)**: this is not properly javascript, it's <u>UnityScript</u>. In Unity's previous versions, it was very popular and today there are some tutorials written in UnityScripts, somewhere. But it is becoming less and less used in favor of a more solid and performing language like c#.
 - **C#**: Is the most used programming language by Unity's community. It's more advanced and optimized, than either Boo and Javascript and interacts better with Obj C and XCode. It's becoming the standard language for gaming on multiple platforms. C# does have some disvantages but will cover this in anoter posts in future. 
 
 In this Rubrica, I'll write code in c#, starting from the very basics.
 
 ### Tabs and Windows
+
+There are multiple tabs in Unity, usually I prefer a layout 
+
+![unityframe]({{site.url}}/images/unityframe.jpg)
 
 #### Scene
 
@@ -44,18 +48,3 @@ In this Rubrica, I'll write code in c#, starting from the very basics.
 #### Inspector
 
 ### Coordinates
-
-# GameObject
-
-### Tags
-
-### Layers
-
-# Prefabs
-
-
-
-
-
-
-
