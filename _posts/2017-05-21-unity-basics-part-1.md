@@ -43,15 +43,28 @@ Click `Layout` on top right corner:
 
 and then:
 
-<p style="text-align: center">
-
 `Right Click on Project -> one column layout`
-
-</p>
 
 #### Scene
 
+The <u>Scene</u> Windows where you will construct your 3D or 2D scene by manipulating, dragging and dropping GameObjects.
+
+You can navigate or modify GameObject in your Scene using top Top Left buttons or with these shortcut: Navigate <kdb>Q</kdb>, Move <kdb>W</kdb>, Rotate <kdb>E</kdb> and Scale <kdb>R</kdb>. There are another shortcuts really useful when compose a scene:
+
+- Navigation
+
+  | ![Left Click]({{site.url}}/images/keycode/leftClick.png) | Move Left and Right based on point. |
+  | ---------------------------------------- | ----------------------------------- |
+  | ![Right Click]({{site.url}}/images/keycode/rightClick.png) | Rotate around point you are on.     |
+  | ![Alt Key]({{site.url}}/images/keycode/alt.png) +  ![Left Click]({{site.url}}/images/keycode/leftClick.png) | Rotate around a selected point.     |
+  | ![Alt Key]({{site.url}}/images/keycode/alt.png) + ![Right Click]({{site.url}}/images/keycode/rightClick.png) | Zoom on a point you are watching.   |
+  | ![F Key]({{site.url}}/images/keycode/fkey.png) | Focus on selected object.           |
+
+
+
 #### Game
+
+
 
 #### Hierarchy 
 
