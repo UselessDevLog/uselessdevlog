@@ -49,16 +49,17 @@ and then:
 
 The <u>Scene</u> Windows where you will construct your 3D or 2D scene by manipulating, dragging and dropping GameObjects.
 
-You can navigate or modify GameObject in your Scene using top Top Left buttons or with these shortcut: Navigate <kdb>Q</kdb>, Move <kdb>W</kdb>, Rotate <kdb>E</kdb> and Scale <kdb>R</kdb>. There are another shortcuts really useful when compose a scene:
+You can navigate or modify GameObject in your Scene using top Top Left buttons or with these shortcut: Navigate <kbd>Q</kbd>, Move <kbd>W</kbd>, Rotate <kbd>E</kbd> and Scale <kbd>R</kbd>. There are another shortcuts really useful when compose a scene:
 
 - Navigation
 
-  | ![Left Click]({{site.url}}/images/keycode/leftClick.png) | Move Left and Right based on point. |
-  | ---------------------------------------- | ----------------------------------- |
-  | ![Right Click]({{site.url}}/images/keycode/rightClick.png) | Rotate around point you are on.     |
-  | ![Alt Key]({{site.url}}/images/keycode/alt.png) +  ![Left Click]({{site.url}}/images/keycode/leftClick.png) | Rotate around a selected point.     |
-  | ![Alt Key]({{site.url}}/images/keycode/alt.png) + ![Right Click]({{site.url}}/images/keycode/rightClick.png) | Zoom on a point you are watching.   |
-  | ![F Key]({{site.url}}/images/keycode/fkey.png) | Focus on selected object.           |
+  |                                        |                                     |
+  | -------------------------------------- | ----------------------------------- |
+  | <kbd>Left Click</kbd>                  | Move Left and Right based on point. |
+  | <kbd>Right Click</kbd>                 | Rotate around point you are on.     |
+  | <kbd>Alt</kbd> + <kbd>Left Click</kbd> | Rotate around a selected point.     |
+  | <kbd>Alt</kbd> + <kbd>RightClick</kbd> | Zoom on a point you are watching.   |
+  | <kbd>F</kbd>                           | Focus on selected object.           |
 
 
 
