@@ -31,7 +31,7 @@ Before start teaching some code, it is usefull to know some *keywords* and aspec
 
 In this Rubrica, I'll write code in c#, starting from the very basics.
 
-### Tabs and Windows
+## Tabs and Windows
 
 There are multiple tabs in Unity, usually I prefer a layout that gives more visibility to Scene and Game, just like this:
 
@@ -45,7 +45,7 @@ and then:
 
 `Right Click on Project -> one column layout`
 
-#### Scene
+### Scene
 
 The <u>Scene</u> Windows where you will construct your 3D or 2D scene by manipulating, dragging and dropping GameObjects.
 
@@ -64,9 +64,7 @@ You can navigate or modify GameObject in your Scene using top Top Left buttons o
   | <kbd>F</kbd>                           | Focus on selected object.           |
 
 
-
-
-#### Game
+### Game
 
 The game preview is activated by pressing the <u>PLAY</u> button at the top of the center. The <u>PAUSE</u> and <u>STEP FORWARD</u> buttons are followed. The latter is used to play yout game frame by frame so that you can best analyze what is happening in the scene.
 Through the inspector, you can change the parameters at *Run Time* to see real-time behaviors that the game assumes with different settings.
@@ -76,7 +74,7 @@ Through the inspector, you can change the parameters at *Run Time* to see real-t
 By clicking on <u>FREE ASPECT</u> you can change the resolution and enter a specific one based on platform you are working on. To enter a particular size, select `EDIT -> Project Setting -> Player`. The new resolution will be visible in editors only through the <u>Maximaze on Play</u>. With this active parameter, every time we hit the PLAY button, game will start in fullscreen mode.
 Finally, to keep track of all the game stats, frames per second (FPS) and number of triangles in the scene, just click on <u>Stats</u> button.
 
-#### Hierarchy 
+### Hierarchy
 
 Hierarchy, in Unity, is the complete list of all the objects that are part of the open scene in the editor. These are in alphabetical order and in parenting order. It is possible to group objects under a single "father" through an empty GameObject
 
@@ -90,7 +88,7 @@ It is always advisable when parenting technique is used only to group objects, t
 
 By right-clicking on the hierarchy, you can create objects in the scene.
 
-#### Project
+### Project
 
 The Project panel allows us to view all the assets of our game. It's the copy of the Assets folder of the project that you can find through the operating system. However, it is not recommended to delete or move folders from system as they may corrupt the links that connect them to your Unity project.
 
@@ -102,11 +100,11 @@ It is possible to create assets in three ways:
 
 In addition to importing from other projects by pressing toolbar `Assets -> Import New Assets`, we can also view the Unity Assets Store directly in the editor.
 
-#### Inspector
+### Inspector
 
 The Inspector panel allows you to change all properties of any object, asset, or editor.
 
-![Game Window]({{site.url}}/images/inspectorPanel.jpg)
+![Inspector Panel]({{site.url}}/images/inspectorPanel.jpg)
 
 Then, all the components of a GameObject are listed starting from the Transform that shows rotation, position, and scale of an object.
 
@@ -123,7 +121,7 @@ Once PLAY is pressed, we can change the values of a scene object in order to see
 
 By right-clicking on the name of a component in PLAY mode and then  `Copy Component `, once the test is over, we can repaste those values in the fields by right clicking again and  `Paste Component Values `.
 
-### Coordinates
+## Coordinates
 
 Unity is defined as a "Y-up" engine as Y is the spatial coordinate upward.
 
@@ -142,7 +140,7 @@ There are two types of coordinates in Unity:
 
 >**Note**: Differences with other engines (Unreal Engine, for example, is a Z-UP engine)
 >
->![difference Engine Coordinate]({{site.url}}/images/differences.jpg){: .img-responsive }
+>![difference Engine Coordinate]({{site.url}}/images/difference.jpg){: .img-responsive }
 
 
 
