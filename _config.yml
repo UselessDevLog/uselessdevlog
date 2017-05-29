@@ -13,7 +13,7 @@ description: >
     every kind games related things, from tutorial to experiences and
     rant!
 baseurl: "" # subpath e.g. /blog
-url: "http://uselessdevlog.com/"
+url: "http://uselessdevlog.com"
 #url: "https://uselessdevlog.github.io" github repo
 #url: "http://127.0.0.1:4000" # local
 twitter_username: giosaffi
