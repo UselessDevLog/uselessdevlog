@@ -73,9 +73,9 @@ image: light.jpg
             {% if forloop.index0 == 2 or forloop.index0 == 5 or forloop.index0 == 8 %}
                 </div>
             {% elsif  forloop.last == true %}
-                {{% if forloop.index0 < 2 or forloop.index0 < 5 or forloop.index0 < 8 %}}
+                {% if forloop.index0 < 2 or forloop.index0 < 5 or forloop.index0 < 8 %}
                     </div>
-                {{% endif %}}
+                {% endif %}
             {% endif %}
         {% endfor %}
         </div>

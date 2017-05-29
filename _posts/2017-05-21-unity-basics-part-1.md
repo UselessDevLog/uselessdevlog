@@ -33,9 +33,9 @@ In this Rubrica, I'll write code in c#, starting from the very basics.
 
 ## Tabs and Windows
 
-There are multiple tabs in Unity, usually I prefer a layout that gives more visibility to Scene and Game, just like this:
+There are multiple tabs in Unity, usually I prefer a layout that gives more visibility to Scene and Game, just like this: 
 
-![unityframe]({{site.url}}/images/unityframe.jpg){: .img-responsive }
+![unityframe](../assets/2017-05-21-unity-basics-part-1/unityframe.jpg)
 
 Click `Layout` on top right corner `Layout -> 2 by 3 Column` and then`Right Click on Project -> one column layout`
 
@@ -43,7 +43,7 @@ Click `Layout` on top right corner `Layout -> 2 by 3 Column` and then`Right Clic
 
 The <u>Scene</u> Windows where you will construct your 3D or 2D scene by manipulating, dragging and dropping GameObjects.
 
-![Scene Shortcuts]({{site.url}}/images/sceneShortcuts.jpg)
+![Scene Shortcuts](../assets/2017-05-21-unity-basics-part-1/sceneShortcuts.jpg)
 
 You can navigate or modify GameObject in your Scene using Top Left buttons or with these shortcuts: Navigate <kbd>Q</kbd>, Translate <kbd>W</kbd>, Rotate <kbd>E</kbd> and Scale <kbd>R</kbd>. There are other shortcuts really useful when composing a scene:
 
@@ -63,7 +63,7 @@ You can navigate or modify GameObject in your Scene using Top Left buttons or wi
 The game preview is activated by pressing the PLAY button at the top of the center. The PAUSE and STEP FORWARD buttons are right beside it. The latter is used to play your game frame by frame so that you can better analyze what is happening in the scene.
 Through the inspector, you can change the parameters at *Run Time* to see the real-time results that the game computes with different settings.
 
-![Game Window]({{site.url}}/images/gameWindows.jpg)
+![Game Window](../assets/2017-05-21-unity-basics-part-1/gameWindows.jpg)
 
 By clicking on FREE ASPECT you can change the resolution and set a specific one based on platform you are working on. To customize the resolution size, select `EDIT -> Project Setting -> Player`. The new resolution will be only  visible in editor through the <u>Maximaze on Play</u>. With this active parameter, every time we hit the PLAY button, the game will start in fullscreen mode.
 Finally, to keep track of all the game stats, frames per second (FPS) and  the total number of triangles composing the meshes in the scene, just click on <u>Stats</u> button.
@@ -98,7 +98,7 @@ In addition to import from other projects by selecting on toolbar `Assets -> Imp
 
 The Inspector panel allows you to change all properties of any object, asset, or editor.
 
-![Inspector Panel]({{site.url}}/images/inspectorPanel.jpg)
+![Inspector Panel](../assets/2017-05-21-unity-basics-part-1/inspectorPanel.jpg)
 
 Then, all the components of a GameObject are listed starting from the Transform that shows rotation, position, and scale of an object.
 
@@ -119,7 +119,7 @@ By right-clicking on the name of a component in PLAY mode and then  `Copy Compon
 
 Unity is defined as a "Y-up" engine as Y is the spatial coordinate upward.
 
-![coordinate]({{site.url}}/images/coordinate.jpg){: .img-responsive }
+![coordinate](../assets/2017-05-21-unity-basics-part-1/coordinate.jpg){: .img-responsive }
 
 These coordinates are also called:
 
@@ -133,8 +133,8 @@ There are two types of coordinates in Unity:
 2. **Local** or "the coordinates of the object". These are of the object itself and change accordingly. For example, the Z coordinate will rotate based on the rotation of the GameObject.
 
 >**Note**: Differences with other engines (Unreal Engine, for example, is a Z-UP engine)
->
->![difference Engine Coordinate]({{site.url}}/images/difference.jpg){: .img-responsive }
+
+![difference Engine Coordinate](../assets/2017-05-21-unity-basics-part-1/difference.jpg){: .img-responsive }
 
 
 
