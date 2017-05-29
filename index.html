@@ -40,7 +40,7 @@ image: light.jpg
                     <div class="panel-footer">
                         
                              <span class="fa-stack fa-lg">
-                                <a class="panel-social" href="http://twitter.com/home?status={{ post.title }}+{{ post.url | prepend: site.url }}" target='_blank'>
+                                <a href="https://twitter.com/intent/tweet?text={{post.title | cgi_escape }}+{{"-" | cgi_escape}}+{{post.url | prepend: site.url | cgi_escape }}{{", via @" | append: site.twitter.page | cgi_escape}}">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class='fa fa-twitter fa-inverse fa-stack-1x'></i>
                                 </a>

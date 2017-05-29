@@ -97,7 +97,7 @@ layout: default-post
         <hr />
         <p class="social-activity">
                 <span class="fa-stack fa-lg">
-                    <a class="panel-social" name="twitter" href="http://twitter.com/home?status={{ page.title }}+{{ page.url | prepend: site.url }}" target='_blank'>
+                    <a href="https://twitter.com/intent/tweet?text={{page.title | cgi_escape }}+{{"-" | cgi_escape}}+{{page.url | prepend: site.url | cgi_escape }}{{", via @" | append: site.twitter.page | cgi_escape}}">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class='fa fa-twitter fa-inverse fa-stack-1x'></i>
                     </a>
