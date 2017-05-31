@@ -11,6 +11,8 @@ image: coffee.jpg
 tags: unity, basics, unity basics, game, dev, programming, c#, c sharp, tutorials, tutorial
 ---
 
+<div class="langSelection">EN | <a href="{{ page.categories[0] | prepend: "/" | prepend: site.url }}/it{{page.id| remove_first: page.categories[0] | remove_first: "/" }}">IT </a></div>
+
 
 
 > **Note**: This is the first part of a small series or, as I love to call it, a *Rubrica*, which was written in 2017 with unity 5.4 - 5.6. So, if you are a reader from the future, maybe it will result to be outdated.
