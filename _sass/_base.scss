@@ -62,34 +62,30 @@ p {
 
 ul, ol {
     font-size: $pFontSize;
-    line-height: 1.6em;
+    line-height: 1.8em;
     text-rendering: optimizeLegibility;
 }
 table {
     font-size: $pFontSize;
-    line-height: 1.6em;
+    line-height: 1.8em;
     text-rendering: optimizeLegibility;
 }
 
 @media(min-width:768px) {
     p {
-        margin: 0 0 35px;
-        font-size: 18px;
+        margin: 0 0 30px;
+        font-size: 21px;
         line-height: 1.6em;
         text-rendering: optimizeLegibility;
     }
     
     ul, ol, table {
-        font-size: 18px;
+        font-size: 21px;
         line-height: 1.6em;
         text-rendering: optimizeLegibility;
     }
 }
-@media(min-width: 1200px) {
-    p, ul, ol, table{
-        font-size: 20px;
-    }
-}
+
 
 a, a.panel-social {
     color: $boldFontColor;

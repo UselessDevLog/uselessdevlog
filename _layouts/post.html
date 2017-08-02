@@ -64,6 +64,8 @@ layout: default-post
     </header>
 
     <div class="post-content content-section container" itemprop="articleBody">
+                <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2">
         {{ content }}
         <br>
                 {% if page.categories %}
@@ -126,7 +128,9 @@ layout: default-post
             </p>
             <hr />
     </div>
-        
+        </div>
+        </div>
+
         {% if page.author and site.data.authors[page.author] %}
         <div class="post-author container">
             <h5 class="text-center">About the author</h5>
